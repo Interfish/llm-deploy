@@ -1,1 +1,3 @@
 .vscode
+hf_models/*
+!hf_models/.keep
