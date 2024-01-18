@@ -14,4 +14,11 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
-    command: ["--model-id", "CultriX/MistralTrix-v1"]
+    command: ["--model-id", "CultriX/MistralTrix-v1",
+              "--revision", "adbba5d81315a0e22aed595cf55f4fe93db4f374",
+              "--sharded", "false",
+              "--max-concurrent-requests", "1",
+              "--max-best-of", "16",
+              "--max-input-length", "8192",
+              "--max-batch-prefill-tokens", "10240",
+              "--max-total-tokens", "10240"]
