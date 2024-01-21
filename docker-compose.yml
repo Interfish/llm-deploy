@@ -14,11 +14,11 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
-    command: ["--model-id", "CultriX/MistralTrix-v1",
-              "--revision", "adbba5d81315a0e22aed595cf55f4fe93db4f374",
+    command: ["--model-id", "mlabonne/NeuralMarcoro14-7B",
+              "--revision", "0632ea9f247528ddb7e0f3251f6a16353eca7dd3",
               "--sharded", "false",
               "--max-concurrent-requests", "1",
               "--max-best-of", "16",
-              "--max-input-length", "8192",
-              "--max-batch-prefill-tokens", "10240",
-              "--max-total-tokens", "10240"]
+              "--max-input-length", "24576",
+              "--max-batch-prefill-tokens", "32768",
+              "--max-total-tokens", "32768"]
